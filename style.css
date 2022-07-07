@@ -1,0 +1,451 @@
+/* = Grid Starts here */
+/* Do the math, dummy */
+/*calculate the width of Columns */
+.col-1 {
+  width: calc(8.3333333333%*1);
+}
+
+.col-2 {
+  width: calc(8.3333333333%*2);
+}
+
+.col-3 {
+  width: calc(8.3333333333%*3);
+}
+
+.col-4 {
+  width: calc(8.3333333333%*4);
+}
+
+.col-5 {
+  width: calc(8.3333333333%*5);
+}
+
+.col-6 {
+  width: calc(8.3333333333%*6);
+}
+
+.col-7 {
+  width: calc(8.3333333333%*7);
+}
+
+.col-8 {
+  width: calc(8.3333333333%*8);
+}
+
+.col-9 {
+  width: calc(8.3333333333%*9);
+}
+
+.col-10 {
+  width: calc(8.3333333333%*10);
+}
+
+.col-11 {
+  width: calc(8.3333333333%*11);
+}
+
+.col-12 {
+  width: calc(8.3333333333%*12);
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.row [class*=col-] {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 1em;
+}
+
+/* Grid Ends */
+/* = below code is only for the demo purpose */
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Caveat', cursive;
+  display: block;
+  background-color: white;
+  margin: 0 auto;
+  line-height: 1.45;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size:3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.563rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  color: #666666;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.top-nav {
+  height: 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: solid 1px #edebe6;
+  z-index: 99;
+  background: white;
+  padding: 0 2rem;
+}
+.top-nav .brand, .top-nav ul li a {
+  height: 80px;
+  line-height: 80px;
+}
+.top-nav ul {
+  display: block;
+  text-align: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.top-nav ul li {
+  display: inline-block;
+}
+.top-nav ul li a {
+  display: inline-block;
+  padding: 0 2rem;
+  color: black;
+}
+.top-nav ul li a:hover {
+  color: #db5051;
+}
+
+.hero {
+  height: 50vh;
+  padding: 20vh 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #3d3c46;
+}
+.hero:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: url("https://images.unsplash.com/photo-1438755582627-221038b62986?q=80&fm=jpg&s=ce1a984f1ac11887a5d5569ebbce53fb") no-repeat;
+  opacity: 0.5;
+  background-size: 100% auto;
+}
+.hero > article {
+  position: relative;
+  z-index: 2;
+}
+.hero > article p, .hero > article h1 {
+  color: white;
+}
+
+/* = Borders */
+.border {
+  border: solid 1px #edebe6;
+}
+
+.border-left {
+  border-left: solid 1px #edebe6;
+}
+
+.border-right {
+  border-right: solid 1px #edebe6;
+}
+
+.border-top {
+  border-top: solid 1px #edebe6;
+}
+
+.border-bottom {
+  border-bottom: solid 1px #edebe6;
+}
+
+/* = Grid ends here */
+/* = UI Components */
+/*Forms */
+input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=file]),
+textarea {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 0.9rem;
+  display: inline-block;
+  width: 100%;
+  border: solid 1px #cccccc;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  box-shadow: none;
+  border-radius: 4px;
+}
+input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=file]):focus,
+textarea:focus {
+  border: solid 1px #aaa;
+}
+
+.input-wrap, fieldset {
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  border: solid 1px #edebe6;
+  padding: 0.6rem;
+}
+fieldset legend {
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+select {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 0.9rem;
+  display: inline-block;
+  width: 100%;
+  border: solid 1px #cccccc;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  box-shadow: none;
+  border-radius: 4px;
+  height: 2.5rem;
+  background: #fff;
+}
+select:focus {
+  border: solid 1px #aaa;
+}
+
+label {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width : 900px) {
+  main [class*=col-] {
+    border: solid 1px #edebe6;
+  }
+
+  .top-nav {
+    position: fixed;
+  }
+  .top-nav nav.col {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    display: block;
+    right: 2em;
+    top: 37px;
+    background: black;
+  }
+  .top-nav nav.col ul {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    top: 80px;
+  }
+  .top-nav nav.col:after, .top-nav nav.col:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+  }
+  .top-nav nav.col:before {
+    top: -8px;
+  }
+  .top-nav nav.col:after {
+    bottom: -8px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .row [class*=col] {
+    flex: 1;
+    width: 100%;
+  }
+  .row[class*=border] {
+    
+  }
+  .header{
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+  }
+  .intro{
+    visibility: hidden;
+  }
+  .intro-sm{
+    visibility: visible;
+  }
+}
+@media only screen and (min-width : 901px) and (max-width: 1024px) {
+  body {
+    width: 900px;
+  }
+  .intro{
+    visibility: visible;
+  }
+  .intro-sm{
+    visibility:hidden;
+  }
+}
+@media only screen and (min-width : 1025px) and (max-width: 1280px) {
+  body {
+    width: 100%;
+  }
+  .intro{
+    visibility: visible;
+  }
+  .intro-sm{
+    visibility: hidden;
+  }
+}
+.sidebar {
+  font-size: 85%;
+}
+.sidebar > article {
+  
+  padding: 1em;
+}
+.sidebar > article:last-of-type {
+  border: none;
+}
+
+.grid-preview {
+  
+}
+.grid-preview [class*=col] {
+  border-color: #cccccc;
+  font-size: 80%;
+}
+
+a{
+  color: inherit;
+}
+
+.footer {
+  position: fixed; 
+  bottom: 0;
+  left: 25px;
+  right: 0;
+  height: 25px;
+}
+
+.intro {
+  position: fixed; 
+  font-weight:bold;
+  bottom: 200px;
+  left: 25px;
+  right: 0;
+  height: 25px;
+}
+
+.header{
+  position: fixed; 
+  top: 30px;
+  left: 25px;
+  right: 0;
+}
+
+.mask {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image:hover img {
+  opacity: 0.5;
+}
+
+.image:hover .mask {
+  opacity: 0.8;
+}
+
+.image{
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.text {
+  opacity: 0.8;
+  color: white;
+  font-size: 35px;
+}
+
+/*
+noda : 37 West 20th st. New York 
+
+Ginza Onodera : 461 Fifth Ave, New York 
+
+Yoshino : 342 Bowery, New York 
+
+Sushi Amane: 245 E 44th St. New York 
+
+Secchu Yokota : 199 E Third St. New York 
+
+Sushi Noz: 181 E 78th St, New York 
+
+Nakaji : 48 Bowery, New York 
+
+Shabushabu Mayumon: 115 Division St, New York 
+
+Icca : 20 Warren St, New York 
+
+Jiro Sukiyabashi : 日本〒104-0061 Tokyo, Chuo City, Ginza, 4 Chome−2−15 塚本総業ビルB1階
+
+Mikawa Zezankyo: 1 Chome-3-1 Fukuzumi, 江東区 Koto City, Tokyo 135-0032日本
+
+*/
